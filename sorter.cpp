@@ -4,7 +4,7 @@
 class Sorter {
      public:
 
-     void bubbleSort(int arr[], int n) { //method 1
+     void bubbleSort(int arr[], int n) { 
           for (int i = 0; i < n - 1; ++i) {
                for (int j = 0; j < n - i - 1; ++j) {
                     if (arr[j] > arr[j + 1]) { 
@@ -15,7 +15,7 @@ class Sorter {
      }
 
 
-     void insertionSort(int arr[], int n) { //method 2
+     void insertionSort(int arr[], int n) { 
           for (int i = 1; i < n; ++i) {
                int key = arr[i];
                int j = i - 1;
@@ -28,12 +28,12 @@ class Sorter {
     }
 
 
-     void mergeSort(int arr[], int n) { //method 3
+     void mergeSort(int arr[], int n) { 
           mergeSortHelper(arr, 0, n - 1);
      }
 
 
-     void quickSort(int arr[], int n) { //method 4
+     void quickSort(int arr[], int n) { 
           quickSortHelper(arr, 0, n - 1);
      }
 
